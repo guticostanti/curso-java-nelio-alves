@@ -1,0 +1,30 @@
+package secao4;
+import java.util.Scanner;
+
+public class Exercicio5 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int codigoPecaUm, codigoPecaDois, qtdPecaUm, qtdPecaDois;
+		
+		double valorPecaUm, valorPecaDois, valorAPagar;
+		
+		codigoPecaUm = sc.nextInt();
+		qtdPecaUm = sc.nextInt();
+		valorPecaUm = sc.nextDouble();
+		
+		codigoPecaDois = sc.nextInt();
+		qtdPecaDois = sc.nextInt();
+		valorPecaDois = sc.nextDouble();
+		
+		valorAPagar = qtdPecaUm * valorPecaUm + qtdPecaDois + valorPecaDois;
+		
+		System.out.printf("VALOR A PAGAR: R$%.2f", valorAPagar);
+		
+		sc.close();
+
+	}
+
+}
