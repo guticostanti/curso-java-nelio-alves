@@ -31,6 +31,19 @@ public class Programa {
 		System.out.println("Account Data:");
 		System.out.println(conta);
 		
+		System.out.print("\nEnter a deposit value: ");
+		double deposito = sc.nextDouble();
+		conta.depositar(deposito);
+		System.out.print("Updated account data:");
+		System.out.println(conta);
+		
+		System.out.println();
+		System.out.print("Enter a withdraw data: ");
+		double saque = sc.nextDouble();
+		conta.sacar(saque);
+		System.out.print("Updated account data: ");
+		System.out.println(conta);
+		
 		sc.close();
 
 	}
