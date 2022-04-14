@@ -3,12 +3,10 @@ package entities;
 public class Rent {
 
 	public String name, email;
-	public int roomNumber;
 	
-	public Rent(String name, String email, int roomNumber) {
+	public Rent(String name, String email) {
 		this.name = name;
 		this.email = email;
-		this.roomNumber = roomNumber;
 	}
 
 	public String getName() {
@@ -26,15 +24,9 @@ public class Rent {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	public int getRoomNumber() {
-		return roomNumber;
-	}
-
-	public void setRoomNumber(int roomNumber) {
-		this.roomNumber = roomNumber;
-	}
 	
-	
+	public String toString() {
+		return name + ", " + email;
+	}
 	
 }
