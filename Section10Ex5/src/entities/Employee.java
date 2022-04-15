@@ -2,9 +2,9 @@ package entities;
 
 public class Employee {
 
-	Integer id;
-	String name;
-	Double salary;
+	private Integer id;
+	private String name;
+	private Double salary;
 	
 	public Employee(Integer id, String name, Double salary) {
 		this.id = id;
@@ -41,7 +41,7 @@ public class Employee {
 	}
 
 	public void increaseSalary(double percentage) {
-		this.salary += this.salary * (percentage / 100);
+		this.salary += salary * (percentage / 100);
 	}
 	
 }
