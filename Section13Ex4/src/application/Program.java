@@ -53,6 +53,8 @@ public class Program {
 		}
 		
 		// Summary
+		System.out.println();
+		System.out.println("ORDER SUMMARY");
 		System.out.println(order);
 		
 	}
