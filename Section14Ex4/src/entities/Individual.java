@@ -21,5 +21,12 @@ public class Individual extends TaxPayer {
 		this.healthSpending = healthSpending;
 	}
 	
-	
+	@Override
+	public double tax() {
+		if (anualRevenue < 20000) {
+			return (anualRevenue * 0.15) - (healthSpending * 0.5);
+		} else {
+			return anualRevenue * 0.25 - (healthSpending * 0.5);
+		}
+	}
 }

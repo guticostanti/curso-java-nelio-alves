@@ -1,9 +1,9 @@
 package entities;
 
-public class TaxPayer {
+public abstract class TaxPayer {
 
-	private String name;
-	private Double anualRevenue;
+	protected String name;
+	protected Double anualRevenue;
 	
 	public TaxPayer() {
 		
@@ -31,5 +31,9 @@ public class TaxPayer {
 		this.anualRevenue = anualRevenue;
 	}
 	
+	public abstract double tax();
 	
+	public String toString() {
+		return name + ": $ " + tax();
+	}
 }

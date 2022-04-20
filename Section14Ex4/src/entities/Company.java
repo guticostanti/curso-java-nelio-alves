@@ -20,6 +20,13 @@ public class Company extends TaxPayer {
 	public void setQuantityOfEmployees(Integer quantityOfEmployees) {
 		this.quantityOfEmployees = quantityOfEmployees;
 	}
-	
-	
+
+	@Override
+	public double tax() {
+		if (quantityOfEmployees > 10) {
+			return anualRevenue * 0.14;
+		} else {
+			return anualRevenue * 0.16;
+		}
+	}
 }

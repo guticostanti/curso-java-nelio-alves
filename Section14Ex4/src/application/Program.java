@@ -38,14 +38,19 @@ public class Program {
 			} else {
 				System.out.print("You entered and invalid type of Tax Payer");
 			}
-			
+		}
+
 		sc.close();
+		
+		double totalTaxes = 0.0;
 		System.out.println();
 		System.out.println("TAXES PAID:");
 		for (TaxPayer taxPayer : list) {
-			
+			System.out.println(taxPayer.toString());
+			totalTaxes += taxPayer.tax();
 		}
-
+		
+		System.out.println();
+		System.out.print("TOTAL TAXES: $ " + totalTaxes);
 	}
-
 }
