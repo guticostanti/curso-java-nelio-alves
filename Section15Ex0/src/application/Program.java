@@ -7,6 +7,14 @@ public class Program {
 
 	public static void main(String[] args) {
 		
+		method2();
+		System.out.println("End of program");
+		
+	}
+	
+	public static void method2() {
+		
+		System.out.println("***METHOD 2 START***");
 		Scanner sc = new Scanner(System.in);
 		
 		try {
@@ -19,12 +27,8 @@ public class Program {
 			System.out.println("Invalid Input Type");
 		}
 		
-		System.out.println("End of program");
-		
-		
+		System.out.println("***METHOD 2 END***");
 		sc.close();
-
-		
 	}
 
 }
